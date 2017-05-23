@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'earth';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
@@ -64,6 +64,13 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+/*
+| -------------------------------------------------------------------
+| OUTSOURCING DATABASE CONNECTIVITY SETTINGS
+| -------------------------------------------------------------------
+|
+*/
+require_once '../config/database.php';
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
